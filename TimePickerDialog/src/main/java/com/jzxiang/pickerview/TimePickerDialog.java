@@ -133,6 +133,10 @@ public class TimePickerDialog extends DialogFragment implements View.OnClickList
         dismiss();
     }
 
+    public String getId(){
+        return Builder.mPickerConfig.mId;
+    }
+    
     public static class Builder {
         PickerConfig mPickerConfig;
 
