@@ -229,6 +229,11 @@ public class TimePickerDialog extends DialogFragment implements View.OnClickList
             mPickerConfig.mMinute = minute;
             return this;
         }
+        
+        public Builder setId(String id){
+            mPickerConfig.mId = id;
+            return this;
+        }
 
         public Builder setCallBack(OnDateSetListener listener) {
             mPickerConfig.mCallBack = listener;
